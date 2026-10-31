@@ -17,21 +17,20 @@ button{cursor:pointer}
 :focus-visible{outline:3px solid #7ab0ff;outline-offset:2px}
 
 /* Шапка */
-header{
-  min-height:var(--hh);
-  height:var(--hh);        /* Жёстко фиксируем высоту */
-  flex:none;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:0 16px;          /* Убрали вертикальные отступы, они больше не нужны */
-  background:linear-gradient(180deg,#1b2823 0%,#16201c 100%);
-  color:var(--stone);
-  flex-wrap:nowrap;        /* Запрещаем перенос на новую строку */
-  z-index:1000;
-  position:relative;
-  box-shadow:0 2px 10px rgba(0,0,0,.25);
-  border-bottom:1px solid #2a3a32;
+header {
+  min-height: var(--hh);
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px;
+  background: linear-gradient(180deg, #1b2823 0%, #16201c 100%);
+  color: var(--stone);
+  flex-wrap: wrap; /* Разрешаем перенос, чтобы на телефоне было красиво */
+  z-index: 1000;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #2a3a32;
 }
 
 /* Навигация (мобильное меню) */
