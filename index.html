@@ -17,15 +17,21 @@ button{cursor:pointer}
 :focus-visible{outline:3px solid #7ab0ff;outline-offset:2px}
 
 /* Шапка */
-header{min-height:var(--hh);flex:none;display:flex;align-items:center;gap:10px;padding:6px 16px;background:var(--night);color:var(--stone);flex-wrap:wrap;z-index:1000;position:relative}
-header h1{margin:0;font:600 18px/1.15 Georgia,"Times New Roman",serif;letter-spacing:.01em}
-header small{display:block;margin-top:2px;font-size:12px;color:#aab6ae}
-.spacer{flex:1}
-.hbtn{border:1px solid #3d4d45;background:transparent;color:var(--stone);padding:7px 12px;border-radius:8px;font-size:14px;line-height:1.2;transition:background .15s}
-.hbtn:hover{background:#243129}
-.hbtn[aria-pressed="true"]{background:var(--stone);color:var(--night);border-color:var(--stone)}
-.only-mobile{display:none}
-.hbtn .sh{display:none}
+header{
+  min-height:var(--hh);
+  flex:none;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:6px 16px;
+  background:linear-gradient(180deg,#1b2823 0%,#16201c 100%);
+  color:var(--stone);
+  flex-wrap:wrap;
+  z-index:1000;
+  position:relative;
+  box-shadow:0 2px 10px rgba(0,0,0,.25);
+  border-bottom:1px solid #2a3a32;
+}
 
 /* Навигация (мобильное меню) */
 .nav-overlay{position:fixed;inset:0;background:rgba(10,15,12,.55);z-index:2000;display:none}
